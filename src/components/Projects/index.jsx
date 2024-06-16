@@ -44,7 +44,7 @@ const Projects = () => {
               whileInView="visible"
               transition={{ duration: 1, delay: 0.5 }}
               viewport={{ once: true }}
-              className="project-1 w-full justify-center items-start"
+              className="project-1 w-full justify-center items-start rounded-md overflow-hidden"
             >
                 <Image src="/images/projects/jobify.png" height={600} width={1300} alt='jobify'/>
             </motion.div>
