@@ -1,4 +1,4 @@
-const { px } = require("framer-motion")
+const { px, transform } = require("framer-motion")
 const {nextui} = require("@nextui-org/react");
 
 module.exports = {
@@ -31,8 +31,8 @@ module.exports = {
         titlebg2: "#FFEAC2",
         titlebgdark: "#46495A",
         btndark: "#292E45",
-        white: "#FFFFFF",
-        black: "#181C31",
+        white: "#F0F2F5",
+        black: "#161513",
         blackho: "#2C3149",
         blacksection: "#1C2136",
         primary: "#006BFF",
@@ -137,6 +137,10 @@ module.exports = {
         "solid-13": "0px 2px 19px rgba(0, 0, 0, 0.05)",
       },
       keyframes: {
+        "loop-scroll":{
+          from: {transform: "translateX(0)"},
+          to: {transform: "translateX(100%)"}
+        },
         line: {
           "0%, 100%": { transform: "translateY(100%)" },
           "50%": { transform: "translateY(0)" },
@@ -146,6 +150,7 @@ module.exports = {
         line1: "line 3s linear infinite",
         line2: "line 6s linear infinite",
         line3: "line 9s linear infinite",
+        "loop-scroll": "loop-scroll 50s linear infinite",
       },
     },
   },

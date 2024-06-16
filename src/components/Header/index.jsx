@@ -55,7 +55,7 @@ const Header = () => {
         <div className="relative mx-auto max-w-c-1390 items-center justify-between px-4 md:px-8 xl:flex 2xl:px-0">
           <div className="flex w-full items-center justify-between xl:w-3/5">
             <a href="/">
-              <h1 className=" text-3xl font-semibold text-[#1F2937] dark:text-[#F9FAFB]">Ram!</h1>
+              <h1 className=" text-3xl font-semibold text-[#1F2937] dark:text-[#F9FAFB] uppercase">Ram!</h1>
             </a>
         
             {/* <!-- Hamburger Toggle BTN --> */}
@@ -131,7 +131,7 @@ const Header = () => {
               <div className="bg-[#1F2937] px-5 py-3 rounded-md dark:bg-[#ffffff]">
                   <Link
                     href="/auth/signin"
-                    className="text-regular font-medium text-white dark:text-[#1F2937]"
+                    className="text-regular font-medium text-white dark:text-[#1F2937] "
                   >
                     Contact me
                   </Link>

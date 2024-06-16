@@ -7,15 +7,27 @@ const menuData = [
     },
     {
       id: 2,
+      title: "Services",
+      newTab: false,
+      path: "/services",
+    },
+    {
+      id: 3,
       title: "Projects",
       newTab: false,
       path: "/projects",
     },
     {
-      id: 3,
-      title: "Services",
+      id: 4,
+      title: "About",
       newTab: false,
-      path: "/services",
+      path: "/about"
+    },
+    {
+      id: 5,
+      title: "Blogs",
+      newTab: false,
+      path: "/blogs"
     },
   ];
   

@@ -16,7 +16,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`bg-light-gradient dark:bg-dark-gradient ${inter.className}`}>
+      <body className={`bg-white dark:bg-black ${inter.className}`}>
         <NextUIProvider>
           <ThemeProvider
             enableSystem={false}
