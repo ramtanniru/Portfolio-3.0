@@ -29,7 +29,7 @@ export default function Hero() {
         >
           <div className='w-full flex flex-col text-start justify-center gap-5 items-start'>
             <h1 className='font-bold text-[40px] text-black dark:text-white leading-snug'>
-              <span className='text_gradient'>Hello, I'm Ram Tanniru,</span><br/>
+              <span className='text_gradient'>Hello, I{`'`}m Ram Tanniru,</span><br/>
               A UI/UX Designer and Developer.
             </h1>
             <p className='text-black dark:text-white'>
