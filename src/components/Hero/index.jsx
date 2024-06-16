@@ -58,8 +58,8 @@ export default function Hero() {
           viewport={{ once: true }}
           className=" animate_right w-2/3"
         >
-          <div className='flex flex-col text-start justify-center gap-10 items-center rounded-md overflow-hidden'>
-            <Image src='images/assets/ram.svg' height={500} width={400} alt="profile"/>
+          <div className='flex flex-col text-start justify-center gap-10 items-center'>
+            <Image src='images/assets/ram.svg' height={500} width={400} alt="profile" className='rounded-md overflow-hidden'/>
           </div>
         </motion.div>
       </main>
