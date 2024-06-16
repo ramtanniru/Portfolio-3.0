@@ -31,7 +31,7 @@ const Header = () => {
     <header
       className={`fixed left-0 top-0 z-99999 w-full py-7 ${
         stickyMenu
-          ? " bg-[#fcf1e1] dark:bg-black !py-4 shadow-lg transition duration-100 "
+          ? " bg-white dark:bg-black !py-4 shadow-lg transition duration-100 "
           : ""
       }`}
     >
