@@ -25,7 +25,7 @@ const Footer = () => {
                   viewport={{ once: true }}
                   className="animate_top"
                 >
-                  <p className="text-[#767794] dark:text-[#999aa1]">&copy;Copyright</p>
+                  <p className="text-[#767794] dark:text-[#999aa1] uppercase">Portfolio</p>
                 </motion.div>
         
                 <motion.div

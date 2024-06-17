@@ -3,8 +3,8 @@ import React from 'react'
 import { motion } from 'framer-motion'
 const About = () => {
   return (
-    <div className="min-h-screen flex flex-col gap-20 items-start justify-start  md:mt-30 md:mb-30">
-      <main className="flex flex-col md:flex-row gap-15 justify-start items-start mt-20 mb-0 mx-7 md:mt-30 md:mb-0 md:mx-30">
+    <div className="flex flex-col gap-20 items-start justify-start  md:mt-30 md:mb-0">
+      <main className="flex flex-col md:flex-row gap-15 justify-start items-start mt-20 mb-0 mx-7 md:mt-0 md:mb-0 md:mx-30">
             <motion.div
               variants={{
                 hidden: {
@@ -45,7 +45,7 @@ const About = () => {
               className="heading w-full md:w-7/12"
             >
               <div className='w-full flex flex-col gap-5 justify-center items-start'>
-                <h1 className='text-[36px] text-black dark:text-white'>I Enjoy Solving Problems With Scalable Solutions And Latest Technologies</h1>
+                <h1 className='text-[36px] text-black dark:text-white font-semibold'>I Enjoy Solving Problems With Scalable Solutions And Latest Technologies</h1>
                 <p className='text-black dark:text-white'>I want to secure a challenging position in a reputable organization to expand my learnings,
                      knowledge, and skills. Secure a responsible career opportunity to fully utilize my training and skills, while making a significant
                       contribution to the success of the company.

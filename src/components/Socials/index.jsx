@@ -2,9 +2,39 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import Card from './card'
+import CodingCard from './CodingCard'
+import GithubProfile from './GithubProfile'
+import axios from 'axios';
+
+// 
+
+// export async function getServerSideProps() {
+//     try {
+//       const headers = {
+//         'Authorization': `Bearer ${GITHUB_TOKEN}`
+//       };
+  
+//       const userRes = await axios.get('https://api.github.com/users/ramtanniru', { headers });
+//       const activityRes = await axios.get('https://api.github.com/users/ramtanniru/events', { headers });
+  
+//       const d = {
+//         userData: userRes.data,
+//         activityData: activityRes.data.slice(0, 10), // Limit to the latest 10 events
+//       };
+  
+//       return d;
+//     } catch (error) {
+//       console.error(error);
+//       return {
+//         notFound: true,
+//       };
+//     }
+//   }
 const Socials = () => {
+    // const props = getServerSideProps();
+    // console.log(props);
   return (
-    <div className="min-h-screen flex flex-col gap-20 items-center justify-center  md:mt-30 md:mb-30">
+    <div className="flex flex-col gap-20 items-center justify-center  md:mt-0 md:mb-0">
       <div className='w-full'>
         <main className="flex flex-col gap-10 justify-center items-center mt-20 mb-0 mx-7 md:mt-30 md:mb-0 md:mx-30">
             <motion.div
@@ -32,17 +62,27 @@ const Socials = () => {
               
             <div className="w-full grid grid-rows-3 grid-cols-4 gap-5 min-h-screen">
                 <div className="row-span-1 col-span-1">
-                    <Card app={"Instagram"} username={"ram_tanniru_"} link={"https://www.instagram.com/ram_tanniru_"} src={"images/social/insta.svg"} key={0}/>
+                    <CodingCard link={""} src={"/images/social/leetcode.jpeg"} key={1}/>
                 </div>
-                <div className="row-span-1 col-span-1 bg-gray-300">
-
+                <div className="row-span-1 col-span-1">
+                    <CodingCard link={""} src={"/images/social/gfg.jpeg"} key={2}/>
                 </div>
-                <div className="row-span-1 col-span-2 bg-gray-300"></div>
+                <div className="row-span-1 col-span-2 bg-gray-300">
+                    {/* <GithubProfile userData={props.userData} activityData={props.activityData} key={1}/> */}
+                </div>
                 <div className="row-span-2 col-span-2 bg-gray-400"></div>
-                <div className="row-span-1 col-span-1 bg-gray-500"></div>
-                <div className="row-span-1 col-span-1 bg-gray-600"></div>
-                <div className="row-span-1 col-span-1 bg-gray-700"></div>
-                <div className="row-span-1 col-span-1 bg-gray-700"></div>
+                <div className="row-span-1 col-span-1">
+                    <Card app={"Figma"} username={"ram_tanniru_"} link={"https://www.instagram.com/ram_tanniru_"} src={"images/social/figma_light.svg"} srcDark={"images/social/figma_light.svg"} key={0}/>
+                </div>
+                <div className="row-span-1 col-span-1">
+                    <Card app={"Instagram"} username={"ram_tanniru_"} link={"https://www.instagram.com/ram_tanniru_"} src={"images/social/insta.svg"} srcDark={"images/social/insta.svg"}  key={0}/>
+                </div>
+                <div className="row-span-1 col-span-1">
+                    <Card app={"LinkedIn"} username={"ram_tanniru_"} link={"https://www.instagram.com/ram_tanniru_"} src={"images/social/linkedin.svg"} srcDark={"images/social/linkedin.svg"}  key={0}/>
+                </div>
+                <div className="row-span-1 col-span-1">
+                    <Card app={"Twitter"} username={"ram_tanniru_"} link={"https://www.instagram.com/ram_tanniru_"} src={"images/social/twitter_light.svg"} srcDark={"images/social/twitter_dark.svg"}  key={0}/>
+                </div>
             </div>
         </main>
       </div>
