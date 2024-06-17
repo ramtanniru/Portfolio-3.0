@@ -3,8 +3,8 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import Card from './card'
 import CodingCard from './CodingCard'
-import GithubProfile from './GithubProfile'
-import axios from 'axios';
+// import GithubProfile from './GithubProfile'
+// import axios from 'axios';
 
 // 
 
