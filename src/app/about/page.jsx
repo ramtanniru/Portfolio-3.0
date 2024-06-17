@@ -11,7 +11,7 @@ const AboutPage = () => {
             
             {/* hero section  */}
 
-            <div className='w-full flex flex-col md:flex-row justify-between items-center mt-10 md:mt-30 mb-10 md:mb-20'>
+            <div className='w-full flex flex-col gap-5 md:flex-row justify-between items-center mt-10 md:mt-30 mb-10 md:mb-20'>
               <motion.div
               variants={{
                   hidden: {
@@ -27,7 +27,7 @@ const AboutPage = () => {
               whileInView="visible"
               transition={{ duration: 1, delay: 0.5 }}
               viewport={{ once: true }}
-              className="w-5/12"
+              className="w-full md:w-5/12"
               >
                 <div className='text-[40px] font-bold text-black dark:text-white'>
                   Hi, I am<br/>
@@ -49,7 +49,7 @@ const AboutPage = () => {
               whileInView="visible"
               transition={{ duration: 1, delay: 0.5 }}
               viewport={{ once: true }}
-              className="w-7/12 flex flex-col justify-start items-start gap-5"
+              className="w-full md:w-7/12 flex flex-col justify-start items-start gap-5"
               >
                 <p className='text-black dark:text-white'>I am in my final year of BTech at VIT-AP University,
                    specializing in computer science. As a coding enthusiast,
@@ -76,22 +76,22 @@ const AboutPage = () => {
                 <div className='row-span-1 col-span-1 bg-white'></div>
             </div>
 
-            <div className='w-full flex flex-col md:flex-row justify-center items-center my-5 md:my-10'>
-                <div className='flex flex-col justify-center items-center gap-3 w-1/3'>
+            <div className='w-full flex flex-col gap-5 md:flex-row justify-center items-center my-5 md:my-10'>
+                <div className='flex flex-row md:flex-col justify-start md:justify-center items-center gap-3 w-full md:w-1/3'>
                     <h1 className='text-[40px] font-bold text_gradient'>
                         6+
                     </h1>
                     <p className='text-black dark:text-white'>Successfully Completed Projects</p>
                 </div>
 
-                <div className='flex flex-col justify-center items-center gap-3 w-1/3'>
+                <div className='flex flex-row md:flex-col justify-start md:justify-center items-center gap-3 w-full md:w-1/3'>
                     <h1 className='text-[40px] font-bold text_gradient'>
                         6+
                     </h1>
                     <p className='text-black dark:text-white'>Awards In University Level Hackathons</p>
                 </div>
 
-                <div className='flex flex-col justify-center items-center gap-3 w-1/3'>
+                <div className='flex flex-row md:flex-col justify-start md:justify-center items-center gap-3 w-full md:w-1/3'>
                     <h1 className='text-[40px] font-bold text_gradient'>
                         1564
                     </h1>
