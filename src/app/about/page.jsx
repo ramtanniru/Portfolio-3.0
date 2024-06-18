@@ -2,8 +2,15 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
+import Scroll from '@/components/Hero/Scroll'
+import { education, work } from '../../../utils/data'
 
 const AboutPage = () => {
+    const bgstyle = (src) => ({
+        backgroundImage : `url(${src})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center'
+    });
   return (
     <div className="min-h-screen flex flex-col gap-20 items-center justify-center  md:mt-0 md:mb-0">
       <div className='w-full'>
@@ -96,6 +103,121 @@ const AboutPage = () => {
                         1564
                     </h1>
                     <p className='text-black dark:text-white'>Contest Rating In Leetcode</p>
+                </div>
+            </div>
+        </main>
+
+        {/* Scroll */}
+
+        <div className='my-30 h-[30px]'>
+                <Scroll/>
+        </div>
+
+        <main className='min-h-screen flex flex-col gap-10 justify-center items-center mt-20 mb-0 mx-7 md:mt-50 md:mb-0 md:mx-30'>
+            <div className='w-full flex flex-col md:flex-row justify-start md:justify-between items-start'>
+                <div className='w-full md:w-5/12 flex flex-col gap-5 justify-start items-start'>
+                    <h1 className='text_gradient text-[40px] font-bold'>Education</h1>
+                    {
+                        education.map((key => (
+                            <div className='w-full flex flex-col justify-between items-start gap-10' key={key}>
+                                <div className='w-full flex flex-col md:flex-row justify-between items-baseline gap-10'>
+                                    <div className='flex flex-col justify-start items-start'>
+                                        <h3 className='text-[32px] font-semibold text-black dark:text-white'>
+                                            {key.school}
+                                        </h3>
+                                        <p className='text-black dark:text-[#B9BBBC]'>{key.degree}</p>
+                                    </div>
+                                    <p className='text-black dark:text-[#838384]'>{key.duration}</p>
+                                </div>
+                                <hr className='w-full border-[#838384]'></hr>
+                            </div>
+                        )))
+                    }
+                </div>
+                <div className='w-full md:w-5/12 flex flex-col gap-5 justify-start items-start'>
+                    <h1 className='text_gradient text-[40px] font-bold'>Work Experience</h1>
+                        {
+                            work.map((key => (
+                                <div className='w-full flex flex-col justify-between items-start gap-10' key={key}>
+                                    <div className='w-full flex flex-col md:flex-row justify-between items-baseline gap-10'>
+                                        <div className='flex flex-col justify-start items-start'>
+                                            <h3 className='text-[32px] font-semibold text-black dark:text-white'>
+                                                {key.place}
+                                            </h3>
+                                            <p className='text-black dark:text-[#B9BBBC]'>{key.role}</p>
+                                        </div>
+                                        <p className='text-black dark:text-[#838384]'>{key.duration}</p>
+                                    </div>
+                                    <hr className='w-full border-[#838384]'></hr>
+                                </div>
+                            )))
+                        }
+                </div>
+            </div>
+
+            {/* Achievements */}
+
+            <div className='w-full md:mt-20 flex flex-col justify-center items-start gap-5'>
+                <h1 className='text_gradient text-[40px] font-bold'>Achievements</h1>
+                <p className='text-black dark:text-white w-7/12'>All the awards and achievements won by me during my journey of 4 years in VIT-AP University</p>
+            </div>
+            <div className="min-h-screen w-full grid grid-rows-3 grid-cols-4 gap-5 mb-10 md:mb-0">
+                <div className="row-span-1 col-span-1 bg-white" style={bgstyle("/images/achievements/mern.pdf")}>
+                </div>
+                <div className="row-span-1 col-span-1 bg-white" style={bgstyle("/images/achievements/awscp.pdf")}>
+                </div>
+                <div className="row-span-1 col-span-2 bg-gray-300" style={bgstyle("/images/achievements/uniday.jpg")}>
+                </div>
+                <div className="row-span-2 col-span-2 bg-gray-400" style={bgstyle("/images/achievements/kgf.jpg")}>
+                </div>
+                <div className="row-span-1 col-span-1 bg-white" style={bgstyle("/images/achievements/ecs.pdf")}>
+                </div>
+                <div className="row-span-1 col-span-1 bg-white" style={bgstyle("/images/achievements/codewithgear.jpeg")}>
+                </div>
+                <div className="row-span-1 col-span-1 bg-white" style={bgstyle("/images/achievements/hackquest.pdf")}>
+                </div>
+                <div className="row-span-1 col-span-1 bg-white" style={bgstyle("/images/achievements/techlite.png")}>
+                </div>
+            </div>
+
+            {/* social */}
+
+            <div className="w-full flex items-start justify-start md:items-center md:justify-center min-h-screen">
+                <div className="relative flex justify-center items-center w-full max-w-4xl">
+                    <div className="absolute -bottom-full md:bottom-1/4 md:left-2/3 w-10/12 md:w-7/12 z-10 p-6 md:px-10 bg-black dark:bg-white shadow-lg transform md:-translate-x-1/2">
+                    <h2 className="text-3xl font-bold text_gradient mb-4">
+                        Follow me
+                    </h2>
+                    <p className="text-white dark:text-gray-700 mb-4">
+                        I'm Ram Tanniru, a designer who works with startups to build brands.
+                    </p>
+                    <hr className="border-gray-300 mb-4" />
+                    <div className="w-full flex flex-row justify-between">
+                        <a href="#">
+                            <Image src="images/icons/fb_light.svg" height={24} width={24} alt="icon" className='dark:hidden'/>
+                            <Image src="images/icons/fb_dark.svg" height={24} width={24} alt="icon" className='hidden dark:block'/>
+                        </a>
+                        <a href="#">
+                            <Image src="images/icons/linkedin_light.svg" height={24} width={24} alt="icon" className='dark:hidden'/>
+                            <Image src="images/icons/linkedin_dark.svg" height={24} width={24} alt="icon" className='hidden dark:block'/>
+                        </a>
+                        <a href="#">
+                            <Image src="images/icons/github_light.svg" height={24} width={24} alt="icon" className='dark:hidden'/>
+                            <Image src="images/icons/github_dark.svg" height={24} width={24} alt="icon" className='hidden dark:block'/>
+                        </a>
+                        <a href="#">
+                            <Image src="images/icons/insta_light.svg" height={24} width={24} alt="icon" className='dark:hidden'/>
+                            <Image src="images/icons/insta_dark.svg" height={24} width={24} alt="icon" className='hidden dark:block'/>
+                        </a>
+                        <a href="#">
+                            <Image src="images/icons/twitter_light.svg" height={24} width={24} alt="icon" className='dark:hidden'/>
+                            <Image src="images/icons/twitter_dark.svg" height={24} width={24} alt="icon" className='hidden dark:block'/>
+                        </a>
+                    </div>
+                    </div>
+                    <div className="relative w-full h-64 md:h-auto">
+                        <Image src="images/assets/ram-2.svg" height={400} width={400} alt="Profile Picture" objectFit="cover" className="rounded-lg" />
+                    </div>
                 </div>
             </div>
         </main>

@@ -130,7 +130,7 @@ const Header = () => {
         
               <div className="bg-[#1F2937] px-5 py-3 rounded-md dark:bg-[#ffffff]">
                   <Link
-                    href="/auth/signin"
+                    href="/contact"
                     className="text-regular font-medium text-white dark:text-[#1F2937] "
                   >
                     Contact me
