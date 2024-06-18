@@ -46,3 +46,26 @@ export const work = [
         duration: "2023-2024"
     }
 ]
+
+export const faqData = [
+    {
+      question: 'How long does a website take to build?',
+      answer: 'The time required to build a website depends on its complexity and the specific requirements of the project. Typically, it can take anywhere from a few weeks to a few months.',
+    },
+    {
+      question: 'How much does a website cost?',
+      answer: 'The cost of a website varies based on the complexity, features, and design requirements. Please contact us for a detailed quote.',
+    },
+    {
+      question: 'I don’t have a design, can you build it for me?',
+      answer: 'Absolutely! We offer full design services and can create a custom design that meets your needs and preferences.',
+    },
+    {
+      question: 'Do you provide SEO as well?',
+      answer: 'Yes, we provide comprehensive SEO services to ensure your website ranks well in search engines.',
+    },
+    {
+      question: 'Will my website load quickly?',
+      answer: 'We prioritize performance and ensure that your website is optimized for fast loading times.',
+    },
+  ];
