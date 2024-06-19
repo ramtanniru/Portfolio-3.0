@@ -69,3 +69,71 @@ export const faqData = [
       answer: 'We prioritize performance and ensure that your website is optimized for fast loading times.',
     },
   ];
+
+export const projects = [
+    { id: 1, title: 'Project One', description: 'This is the first project' },
+    { id: 2, title: 'Project Two', description: 'This is the second project' },
+    { id: 3, title: 'Project Three', description: 'This is the third project' },
+  ];
+
+export const project = {
+    "ui" : [
+        {
+            id: 11,
+            title: "VIT-AP University",
+            src: "/images/projects/jobify.png",
+            caption: "Figma",
+        },
+        {
+            id:12,
+            title: "Jobify",
+            src: "/images/projects/jobify.png",
+            caption: "Figma",
+        }
+    ],
+    "web" : [
+        {
+            id:21,
+            title: "VIT AP University",
+            src: "/images/projects/jobify.png",
+            caption: "React JS, Node JS, Express JS, MongoDB, Bootstrap",
+        },
+        {
+            id:22,
+            title: "Smart Attendance",
+            src: "/images/projects/jobify.png",
+            caption: "Python, Open CV",
+        }
+    ],
+    "app" : [
+        {
+            id:31,
+            title: "To Do List",
+            src: "/images/projects/jobify.png",
+            caption: "Flutter",
+        },
+        {
+            id:31,
+            title: "To Do List",
+            src: "/images/projects/jobify.png",
+            caption: "Flutter",
+        },
+        {
+            id:31,
+            title: "To Do List",
+            src: "/images/projects/jobify.png",
+            caption: "Flutter",
+        },
+    ]
+}
+
+export const projectDesc = [
+    {
+        id: 11,
+        title: "Jobify",
+        type: "Web application",
+        src: "/images/projects/jobify.png",
+        role: "Full stack developer",
+        about: "A Job searching platform for hr's and job seekers"
+    }
+]
