@@ -3,7 +3,8 @@ import { React, useRef } from 'react'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 import Button from '@/components/ui/Button'
-import Faq from './faq'
+import {Accordion, AccordionItem} from "@nextui-org/react";
+import { faqData } from '../../../utils/data'
 
 const ContactPage = () => {
   const Name = useRef();
@@ -133,7 +134,14 @@ const ContactPage = () => {
                 viewport={{ once: true }}
                 className="flex flex-col justify-start items-start gap-5 w-full md:w-5/12"
               >
-                <Faq/>
+                <Accordion>
+                    {faqData.map((key,id) => (
+                        <AccordionItem key={id} aria-label="Accordion 1" title={key.question}>
+                            {key.answer}
+                        </AccordionItem>
+                    ))
+                    }
+                </Accordion>
               </motion.div>
             </div>
         </main>
