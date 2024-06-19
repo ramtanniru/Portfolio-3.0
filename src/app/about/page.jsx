@@ -189,7 +189,7 @@ const AboutPage = () => {
                         Follow me
                     </h2>
                     <p className="text-white dark:text-gray-700 mb-4">
-                        I'm Ram Tanniru, a designer who works with startups to build brands.
+                        I{`'`}m Ram Tanniru, a designer who works with startups to build brands.
                     </p>
                     <hr className="border-gray-300 mb-4" />
                     <div className="w-full flex flex-row justify-between">

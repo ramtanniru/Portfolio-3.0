@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 import Image from 'next/image'
 import Button from '@/components/ui/Button'
 
-const contactPage = () => {
+const ServicesPage = () => {
   return (
 <div className="min-h-screen flex flex-col gap-20 items-center justify-center  md:mt-0 md:mb-0">
       <div className='w-full'>
@@ -53,7 +53,7 @@ const contactPage = () => {
                             <h1 className='text-[36px] font-bold text-black dark:text-white'>Web Development</h1>
                             <p className='text-black dark:text-white'>I offer comprehensive web development services utilizing the latest technologies like Next.js, React.js, and Node.js.
                                 With expertise in both front-end frameworks such as Tailwind CSS and Bootstrap, and back-end solutions including MongoDB and Flask, I deliver robust and
-                                scalable web applications tailored to your needs. Let's build seamless digital experiences together.</p>
+                                scalable web applications tailored to your needs. Let{`'`}s build seamless digital experiences together.</p>
                             <Button text={"Hire me"}/>
                         </div>
                         <div className='w-full md:w-1/3'>
@@ -85,7 +85,7 @@ const contactPage = () => {
                             <h1 className='text-[36px] font-bold text-black dark:text-white'>UI/UX Design</h1>
                             <p className='text-black dark:text-white'>I offer comprehensive web development services utilizing the latest technologies like Next.js, React.js, and Node.js.
                                 With expertise in both front-end frameworks such as Tailwind CSS and Bootstrap, and back-end solutions including MongoDB and Flask, I deliver robust and
-                                scalable web applications tailored to your needs. Let's build seamless digital experiences together.</p>
+                                scalable web applications tailored to your needs. Let{`'`}s build seamless digital experiences together.</p>
                             <Button text={"Hire me"}/>
                         </div>
                 </motion.div>
@@ -111,7 +111,7 @@ const contactPage = () => {
                             <h1 className='text-[36px] font-bold text-black dark:text-white'>App Development</h1>
                             <p className='text-black dark:text-white'>I offer comprehensive web development services utilizing the latest technologies like Next.js, React.js, and Node.js.
                                 With expertise in both front-end frameworks such as Tailwind CSS and Bootstrap, and back-end solutions including MongoDB and Flask, I deliver robust and
-                                scalable web applications tailored to your needs. Let's build seamless digital experiences together.</p>
+                                scalable web applications tailored to your needs. Let{`'`}s build seamless digital experiences together.</p>
                             <Button text={"Hire me"}/>
                         </div>
                         <div className='w-full md:w-1/3'>
@@ -125,4 +125,4 @@ const contactPage = () => {
   )
 }
 
-export default contactPage
+export default ServicesPage

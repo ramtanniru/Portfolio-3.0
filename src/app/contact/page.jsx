@@ -1,15 +1,15 @@
 "use client"
-import React, { useRef } from 'react'
+import { React, useRef } from 'react'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 import Button from '@/components/ui/Button'
 import Faq from './faq'
 
-const contactPage = () => {
-  const name = useRef();
-  const email = useRef();
-  const budget = useRef();
-  const jobDesc = useRef();
+const ContactPage = () => {
+  const Name = useRef();
+  const Email = useRef();
+  const Budget = useRef();
+  const JobDesc = useRef();
   const submitForm = () => {
 
   }
@@ -71,19 +71,19 @@ const contactPage = () => {
                 >
                   <div className='w-full flex flex-col justify-start items-start gap-3'>
                     <h6 className='text-black dark:text-white font-bold text-[24px]'>Your Name</h6>
-                    <input type='text' placeholder='Enter your name' className='w-full bg-[#1C1C22] px-5 p-3 rounded-md' ref={name}/>
+                    <input type='text' placeholder='Enter your name' className='w-full bg-[#1C1C22] px-5 p-3 rounded-md' ref={Name}/>
                   </div>
                   <div className='w-full flex flex-col justify-start items-start gap-3'>
                     <h6 className='text-black dark:text-white font-bold text-[24px]'>Your E-mail</h6>
-                    <input type='text' placeholder='Enter your e-mail' className='w-full bg-[#1C1C22] px-5 p-3 rounded-md' ref={email}/>
+                    <input type='text' placeholder='Enter your e-mail' className='w-full bg-[#1C1C22] px-5 p-3 rounded-md' ref={Email}/>
                   </div>
                   <div className='w-full flex flex-col justify-start items-start gap-3'>
                     <h6 className='text-black dark:text-white font-bold text-[24px]'>Your Budget</h6>
-                    <input type='text' placeholder='Enter your name' className='w-full bg-[#1C1C22] px-5 p-3 rounded-md' ref={budget}/>
+                    <input type='text' placeholder='Enter your name' className='w-full bg-[#1C1C22] px-5 p-3 rounded-md' ref={Budget}/>
                   </div>
                   <div className='w-full flex flex-col justify-start items-start gap-3'>
                     <h6 className='text-black dark:text-white font-bold text-[24px]'>Tell me a bit more what you are lookung for?</h6>
-                    <textarea type='text' placeholder='' className='w-full bg-[#1C1C22] px-5 p-3 rounded-md' ref={jobDesc}/>
+                    <textarea type='text' placeholder='' className='w-full bg-[#1C1C22] px-5 p-3 rounded-md' ref={JobDesc}/>
                   </div>
                   <Button text={"submit now"}/>
               </motion.div>
@@ -142,4 +142,4 @@ const contactPage = () => {
   )
 }
 
-export default contactPage
+export default ContactPage
