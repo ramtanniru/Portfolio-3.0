@@ -4,14 +4,14 @@ import Image from 'next/image'
 const Scroll = () => {
   const content = (
     <>
-      <Image src='/images/assets/twinkle.svg' height={30} width={30} alt="twinkle" className='hidden dark:block'/>
-      <Image src='/images/assets/twinkle-dark.svg' height={30} width={30} alt="twinkle" className='dark:hidden'/>
+      <Image src='/images/assets/twinkle.svg' height={30} width={30} alt="twinkle" className='hidden dark:block' loading='eager'/>
+      <Image src='/images/assets/twinkle-dark.svg' height={30} width={30} alt="twinkle" className='dark:hidden' loading='eager'/>
       <h1 className='font-semibold text-[32px] text-white dark:text-black'>Design</h1>
-      <Image src='/images/assets/twinkle.svg' height={30} width={30} alt="twinkle" className='hidden dark:block'/>
-      <Image src='/images/assets/twinkle-dark.svg' height={30} width={30} alt="twinkle" className='dark:hidden'/>
+      <Image src='/images/assets/twinkle.svg' height={30} width={30} alt="twinkle" className='hidden dark:block' loading='eager'/>
+      <Image src='/images/assets/twinkle-dark.svg' height={30} width={30} alt="twinkle" className='dark:hidden' loading='eager'/>
       <h1 className='font-semibold text-[32px] text-white dark:text-black'>Develop</h1>
-      <Image src='/images/assets/twinkle.svg' height={30} width={30} alt="twinkle" className='hidden dark:block'/>
-      <Image src='/images/assets/twinkle-dark.svg' height={30} width={30} alt="twinkle" className='dark:hidden'/>
+      <Image src='/images/assets/twinkle.svg' height={30} width={30} alt="twinkle" className='hidden dark:block' loading='eager'/>
+      <Image src='/images/assets/twinkle-dark.svg' height={30} width={30} alt="twinkle" className='dark:hidden' loading='eager'/>
       <h1 className='font-semibold text-[32px] text-white dark:text-black'>Discover</h1>
     </>
   );
