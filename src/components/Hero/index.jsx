@@ -4,7 +4,7 @@ import '../../app/globals.css';
 import {motion} from 'framer-motion';
 import Button from '../ui/Button';
 import Button2 from '../ui/Button2';
-import Scroll from '../ui/Scroll';
+import Scroll from './Scroll';
 
 export default function Hero() {
   return (
