@@ -1,7 +1,8 @@
 "use client"
 import React from 'react'
-import { useParams } from 'react-router-dom';
+import { useParams } from 'next/navigation';
 import { blogContent } from '../../../../utils/blogs';
+import { motion } from 'framer-motion';
 const BlogPage = () => {
     const { id } = useParams();
 
