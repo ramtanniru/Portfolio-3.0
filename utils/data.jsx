@@ -134,6 +134,19 @@ export const projectDesc = [
         type: "Web application",
         src: "/images/projects/jobify.png",
         role: "Full stack developer",
-        about: "A Job searching platform for hr's and job seekers"
+        about: "Job Searching Platform and HR Recruitment",
+        tech: {
+            "Frontend":["React JS","Material UI"],
+            "Backend":["Express JS","Node JS"],
+            "Database":["MongoDB"]
+        },
+        problemSrc: "",
+        solutionSrc: "",
+        images: ["/images/projects/jobify.png",
+            "",
+            "",
+            "",
+            ""
+        ],
     }
 ]

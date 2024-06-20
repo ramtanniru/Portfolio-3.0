@@ -138,8 +138,8 @@ module.exports = {
       },
       keyframes: {
         "loop-scroll":{
-          from: {transform: "translateX(0)"},
-          to: {transform: "translateX(100%)"}
+          '0%': { transform: 'translateX(-50%)' },
+          '100%': { transform: 'translateX(0%)' },
         },
         line: {
           "0%, 100%": { transform: "translateY(100%)" },
@@ -150,7 +150,7 @@ module.exports = {
         line1: "line 3s linear infinite",
         line2: "line 6s linear infinite",
         line3: "line 9s linear infinite",
-        "loop-scroll": "loop-scroll 50s linear infinite",
+        "loop-scroll": "loop-scroll 5s linear infinite",
       },
     },
   },
