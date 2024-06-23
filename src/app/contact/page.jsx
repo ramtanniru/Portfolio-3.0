@@ -136,7 +136,7 @@ const ContactPage = () => {
               >
                 <Accordion>
                     {faqData.map((key,id) => (
-                        <AccordionItem key={id} aria-label="Accordion 1" title={key.question}>
+                        <AccordionItem key={id} aria-label="Accordion 1" title={key.question} className='text-black dark:text-white'>
                             {key.answer}
                         </AccordionItem>
                     ))
