@@ -1,24 +1,30 @@
 export const skills = [
     {
         name: 'Figma',
-        src: 'images/social/figma_light.svg'
+        src: 'images/skills/figma_light.svg',
+        srcDark: 'images/skills/figma_dark.svg'
     },
     {
-        name: 'Figma',
-        src: 'images/social/figma_light.svg'
+        name: 'Flutter',
+        src: 'images/skills/flutter_light.svg',
+        srcDark: 'images/skills/flutter_dark.svg'
     },
     {
-        name: 'Figma',
-        src: 'images/social/figma_light.svg'
+        name: 'Next JS',
+        src: 'images/skills/next.svg',
+        srcDark: 'images/skills/next.svg'
     },
     {
-        name: 'Figma',
-        src: 'images/social/figma_light.svg'
+        name: 'React JS',
+        src: 'images/skills/react_light.svg',
+        srcDark: 'images/skills/react_dark.svg'
     },
     {
-        name: 'Figma',
-        src: 'images/social/figma_light.svg'
-    }
+        name: 'Python',
+        src: 'images/skills/python.svg',
+        srcDark: 'images/skills/python.svg'
+    },
+    
 ]
 
 export const education = [

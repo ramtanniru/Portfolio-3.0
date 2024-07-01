@@ -29,7 +29,7 @@ const Skills = () => {
                     <h1 className='text-black dark:text-white font-bold text-[40px]'>What I Do.</h1>
                     <div className='flex flex-wrap w-full justify-start items-center gap-12'>
                         {skills.map((key)=>(
-                            <SkillCard key={key} name={key.name} src={key.src}/>
+                            <SkillCard key={key} name={key.name} src={key.src} srcDark={key.srcDark}/>
                         ))}
                     </div>
                 </div>
