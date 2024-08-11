@@ -3,36 +3,41 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import Card from './Card'
 import CodingCard from './CodingCard'
-// import GithubProfile from './GithubProfile'
-// import axios from 'axios';
+import GithubProfile from './GithubProfile'
+import axios from 'axios';
 
-// 
 
-// export async function getServerSideProps() {
-//     try {
-//       const headers = {
-//         'Authorization': `Bearer ${GITHUB_TOKEN}`
-//       };
+
+export async function getServerSideProps() {
+    // try {
+    //   const headers = {
+    //     'Authorization': `Bearer ${GITHUB_TOKEN}`
+    //   };
   
-//       const userRes = await axios.get('https://api.github.com/users/ramtanniru', { headers });
-//       const activityRes = await axios.get('https://api.github.com/users/ramtanniru/events', { headers });
+    //   const userRes = await axios.get('https://api.github.com/users/ramtanniru', { headers });
+
   
-//       const d = {
-//         userData: userRes.data,
-//         activityData: activityRes.data.slice(0, 10), // Limit to the latest 10 events
-//       };
+    //   const d = {
+    //     userData: userRes.data,
+    //   };
   
-//       return d;
-//     } catch (error) {
-//       console.error(error);
-//       return {
-//         notFound: true,
-//       };
-//     }
-//   }
+    //   return d;
+    // } catch (error) {
+    //   console.error(error);
+    //   return {
+    //     notFound: true,
+    //   };
+    // }
+    try{
+        const userData = await fetch('api.github.com/users/ramtanniru');
+    }
+    catch(err){
+        console.log(err);
+    }
+  }
 const Socials = () => {
-    // const props = getServerSideProps();
-    // console.log(props);
+    const props = getServerSideProps();
+    console.log(props);
   return (
     <div className="flex flex-col gap-20 items-center justify-center  md:mt-0 md:mb-0">
       <div className='w-full'>
@@ -62,10 +67,10 @@ const Socials = () => {
               
             <div className="w-full grid grid-rows-3 grid-cols-4 gap-5 min-h-screen">
                 <div className="row-span-1 col-span-1">
-                    <CodingCard link={""} src={"/images/social/leetcode.jpeg"} key={1}/>
+                    <CodingCard link={"https://leetcode.com/u/ram_tanniru/"} src={"/images/social/leetcode.jpeg"} key={1}/>
                 </div>
                 <div className="row-span-1 col-span-1">
-                    <CodingCard link={""} src={"/images/social/gfg.jpeg"} key={2}/>
+                    <CodingCard link={"https://www.geeksforgeeks.org/user/ramtanniru2/"} src={"/images/social/gfg.jpeg"} key={2}/>
                 </div>
                 <div className="row-span-1 col-span-2 bg-gray-300">
                     {/* <GithubProfile userData={props.userData} activityData={props.activityData} key={1}/> */}
@@ -78,10 +83,10 @@ const Socials = () => {
                     <Card app={"Instagram"} username={"ram_tanniru_"} link={"https://www.instagram.com/ram_tanniru_"} src={"images/social/insta.svg"} srcDark={"images/social/insta.svg"}  key={0}/>
                 </div>
                 <div className="row-span-1 col-span-1">
-                    <Card app={"LinkedIn"} username={"ram_tanniru_"} link={"https://www.instagram.com/ram_tanniru_"} src={"images/social/linkedin.svg"} srcDark={"images/social/linkedin.svg"}  key={0}/>
+                    <Card app={"LinkedIn"} username={"ram_tanniru_"} link={"https://www.linkedin.com/in/ram-tanniru-12b35b222/"} src={"images/social/linkedin.svg"} srcDark={"images/social/linkedin.svg"}  key={0}/>
                 </div>
                 <div className="row-span-1 col-span-1">
-                    <Card app={"Twitter"} username={"ram_tanniru_"} link={"https://www.instagram.com/ram_tanniru_"} src={"images/social/twitter_light.svg"} srcDark={"images/social/twitter_dark.svg"}  key={0}/>
+                    <Card app={"Twitter"} username={"ram_tanniru_"} link={"https://x.com/ramtanniru2"} src={"images/social/twitter_light.svg"} srcDark={"images/social/twitter_dark.svg"}  key={0}/>
                 </div>
             </div>
         </main>

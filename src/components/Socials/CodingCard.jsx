@@ -9,7 +9,7 @@ const CodingCard = ({src,link}) => {
     }
   return (
     <a className='w-full h-full px-10 flex flex-col justify-center items-start gap-5 rounded-lg border border-[#BABABA]
-     dark:border-white shadow-md' href={link} style={style}>
+     dark:border-white shadow-md' href={link} target='_blank' style={style}>
     </a>
   )
 }

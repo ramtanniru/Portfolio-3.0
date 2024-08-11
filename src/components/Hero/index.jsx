@@ -10,6 +10,7 @@ export default function Hero() {
   return (
     <div className="min-h-screen flex flex-col gap-20 items-center justify-center mb-30">
       <main className="flex flex-col md:flex-row gap-15 items-center text-start mt-30 mb-0 mx-7 md:mt-30 md:mb-0 md:mx-30">
+        {/* intro */}
         <motion.div
           variants={{
             hidden: {
@@ -37,10 +38,11 @@ export default function Hero() {
             </p>
             <div className='flex flex-row gap-5'>
               <Button text={"get in touch"}/>
-              <Button2 text={"view all works"}/>
+              <Button2 text={"view resume"} link={"https://drive.google.com/file/d/1LFRlccvq2PLRId7yguq2JnzXpatZH2lC/view?usp=sharing"}/>
             </div>
           </div>
         </motion.div>
+        {/* image */}
         <motion.div
           variants={{
             hidden: {
