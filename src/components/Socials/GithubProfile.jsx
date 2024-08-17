@@ -29,8 +29,8 @@ const GithubProfile = () => {
         <div className="flex flex-row gap-2">
           {
             Array.from({ length: 13 }, (_, week) =>(<div className='flex flex-col gap-2' key={_}>
-                {user.data?.contributions[week]?.contributions.map((day) => ( <div
-                    key={day.color}
+                {user.data?.contributions[week]?.contributions.map((day,id) => ( <div
+                    key={week+day}
                     className={`w-5 h-5 rounded-md dark:border`}
                     style={{ backgroundColor: day.color }}
                   />

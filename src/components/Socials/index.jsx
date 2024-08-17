@@ -4,40 +4,8 @@ import { motion } from 'framer-motion'
 import Card from './Card'
 import CodingCard from './CodingCard'
 import GithubProfile from './GithubProfile'
-import axios from 'axios';
 
-
-
-export async function getServerSideProps() {
-    // try {
-    //   const headers = {
-    //     'Authorization': `Bearer ${GITHUB_TOKEN}`
-    //   };
-  
-    //   const userRes = await axios.get('https://api.github.com/users/ramtanniru', { headers });
-
-  
-    //   const d = {
-    //     userData: userRes.data,
-    //   };
-  
-    //   return d;
-    // } catch (error) {
-    //   console.error(error);
-    //   return {
-    //     notFound: true,
-    //   };
-    // }
-    try{
-        const userData = await fetch('api.github.com/users/ramtanniru');
-    }
-    catch(err){
-        console.log(err);
-    }
-  }
 const Socials = () => {
-    const props = getServerSideProps();
-    console.log(props);
   return (
     <div className="flex flex-col gap-20 items-center justify-center  md:mt-0 md:mb-0">
       <div className='w-full'>
@@ -75,7 +43,7 @@ const Socials = () => {
                     <GithubProfile/>
                 </div>
                 <div className="row-span-2 col-span-2">
-                    <CodingCard link={""} src={"/images/social/blogs.png"}/>
+                    <CodingCard src={"/images/social/blogs.png"} link={'/blogs'}/>
                 </div>
                 <div className="row-span-1 col-span-1">
                     <Card app={"Figma"} username={"ram_tanniru_"} link={"https://www.instagram.com/ram_tanniru_"} src={"images/social/figma_light.svg"} srcDark={"images/social/figma_light.svg"} key={0}/>
