@@ -29,26 +29,28 @@ const Projects = () => {
                 <p className='text-black dark:text-white'>I do deep market research before starting any project the gives an unfair advantage to bring the best result for client</p>
               </div>
             </motion.div>
-            <motion.div
-              variants={{
-                hidden: {
-                  opacity: 0,
-                  x: -20,
-                },
-                visible: {
-                  opacity: 1,
-                  x: 0,
-                },
-              }}
-              initial="hidden"
-              whileInView="visible"
-              transition={{ duration: 1, delay: 0.5 }}
-              viewport={{ once: true }}
-              className="project-1 w-full justify-center items-start rounded-md overflow-hidden"
-            >
-                <Image src="/images/projects/jobify.png" height={600} width={1300} alt='jobify'/>
-            </motion.div>
-            <motion.div
+              {/* Project 1  */}
+              <motion.div
+                variants={{
+                  hidden: {
+                    opacity: 0,
+                    x: -20,
+                  },
+                  visible: {
+                    opacity: 1,
+                    x: 0,
+                  },
+                }}
+                initial="hidden"
+                whileInView="visible"
+                transition={{ duration: 1, delay: 0.5 }}
+                viewport={{ once: true }}
+                className="project-1 w-full justify-center items-start rounded-md overflow-hidden"
+              >
+                  <Image src="/images/projects/jobify.png" height={600} width={1300} alt='jobify'/>
+              </motion.div>
+              {/* Project 2  */}
+              {/* <motion.div
               variants={{
                 hidden: {
                   opacity: 0,
@@ -66,7 +68,7 @@ const Projects = () => {
               className="project-1 w-full justify-center items-start rounded-md overflow-hidden"
             >
                 <Image src="/images/projects/jobify.png" height={600} width={1300} alt='jobify'/>
-            </motion.div>
+              </motion.div> */}
       </main>
     </div>
   )

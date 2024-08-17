@@ -156,3 +156,450 @@ export const projectDesc = [
         ],
     }
 ]
+
+export const githubData = 
+{
+  "url": "https://github.com/ramtanniru",
+  "data": {
+    "name": "Ram Tanniru",
+    "handle": "ramtanniru",
+    "followers": 9,
+    "following": 14,
+    "repositories": 24,
+    "contributions": [
+      {
+        "week": "2024-05-19",
+        "contributions": [
+          {
+            "color": "#ebedf0",
+            "count": 0
+          },
+          {
+            "color": "#9be9a8",
+            "count": 1
+          },
+          {
+            "color": "#9be9a8",
+            "count": 2
+          },
+          {
+            "color": "#9be9a8",
+            "count": 2
+          },
+          {
+            "color": "#ebedf0",
+            "count": 0
+          },
+          {
+            "color": "#ebedf0",
+            "count": 0
+          },
+          {
+            "color": "#ebedf0",
+            "count": 0
+          }
+        ]
+      },
+      {
+        "week": "2024-05-26",
+        "contributions": [
+          {
+            "color": "#ebedf0",
+            "count": 0
+          },
+          {
+            "color": "#ebedf0",
+            "count": 0
+          },
+          {
+            "color": "#ebedf0",
+            "count": 0
+          },
+          {
+            "color": "#ebedf0",
+            "count": 0
+          },
+          {
+            "color": "#ebedf0",
+            "count": 0
+          },
+          {
+            "color": "#ebedf0",
+            "count": 0
+          },
+          {
+            "color": "#9be9a8",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "week": "2024-06-02",
+        "contributions": [
+          {
+            "color": "#9be9a8",
+            "count": 1
+          },
+          {
+            "color": "#ebedf0",
+            "count": 0
+          },
+          {
+            "color": "#9be9a8",
+            "count": 2
+          },
+          {
+            "color": "#9be9a8",
+            "count": 1
+          },
+          {
+            "color": "#9be9a8",
+            "count": 3
+          },
+          {
+            "color": "#9be9a8",
+            "count": 1
+          },
+          {
+            "color": "#9be9a8",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "week": "2024-06-09",
+        "contributions": [
+          {
+            "color": "#9be9a8",
+            "count": 1
+          },
+          {
+            "color": "#9be9a8",
+            "count": 3
+          },
+          {
+            "color": "#40c463",
+            "count": 4
+          },
+          {
+            "color": "#40c463",
+            "count": 7
+          },
+          {
+            "color": "#9be9a8",
+            "count": 3
+          },
+          {
+            "color": "#40c463",
+            "count": 6
+          },
+          {
+            "color": "#40c463",
+            "count": 5
+          }
+        ]
+      },
+      {
+        "week": "2024-06-16",
+        "contributions": [
+          {
+            "color": "#40c463",
+            "count": 7
+          },
+          {
+            "color": "#40c463",
+            "count": 7
+          },
+          {
+            "color": "#40c463",
+            "count": 4
+          },
+          {
+            "color": "#40c463",
+            "count": 5
+          },
+          {
+            "color": "#40c463",
+            "count": 5
+          },
+          {
+            "color": "#30a14e",
+            "count": 10
+          },
+          {
+            "color": "#40c463",
+            "count": 5
+          }
+        ]
+      },
+      {
+        "week": "2024-06-23",
+        "contributions": [
+          {
+            "color": "#40c463",
+            "count": 6
+          },
+          {
+            "color": "#9be9a8",
+            "count": 2
+          },
+          {
+            "color": "#ebedf0",
+            "count": 0
+          },
+          {
+            "color": "#9be9a8",
+            "count": 3
+          },
+          {
+            "color": "#9be9a8",
+            "count": 3
+          },
+          {
+            "color": "#9be9a8",
+            "count": 3
+          },
+          {
+            "color": "#9be9a8",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "week": "2024-06-30",
+        "contributions": [
+          {
+            "color": "#9be9a8",
+            "count": 1
+          },
+          {
+            "color": "#40c463",
+            "count": 5
+          },
+          {
+            "color": "#9be9a8",
+            "count": 2
+          },
+          {
+            "color": "#9be9a8",
+            "count": 1
+          },
+          {
+            "color": "#9be9a8",
+            "count": 1
+          },
+          {
+            "color": "#9be9a8",
+            "count": 3
+          },
+          {
+            "color": "#40c463",
+            "count": 4
+          }
+        ]
+      },
+      {
+        "week": "2024-07-07",
+        "contributions": [
+          {
+            "color": "#9be9a8",
+            "count": 2
+          },
+          {
+            "color": "#9be9a8",
+            "count": 2
+          },
+          {
+            "color": "#9be9a8",
+            "count": 3
+          },
+          {
+            "color": "#40c463",
+            "count": 4
+          },
+          {
+            "color": "#9be9a8",
+            "count": 1
+          },
+          {
+            "color": "#9be9a8",
+            "count": 2
+          },
+          {
+            "color": "#9be9a8",
+            "count": 1
+          }
+        ]
+      },
+      {
+        "week": "2024-07-14",
+        "contributions": [
+          {
+            "color": "#216e39",
+            "count": 11
+          },
+          {
+            "color": "#40c463",
+            "count": 7
+          },
+          {
+            "color": "#30a14e",
+            "count": 8
+          },
+          {
+            "color": "#9be9a8",
+            "count": 3
+          },
+          {
+            "color": "#9be9a8",
+            "count": 1
+          },
+          {
+            "color": "#9be9a8",
+            "count": 3
+          },
+          {
+            "color": "#40c463",
+            "count": 7
+          }
+        ]
+      },
+      {
+        "week": "2024-07-21",
+        "contributions": [
+          {
+            "color": "#9be9a8",
+            "count": 1
+          },
+          {
+            "color": "#9be9a8",
+            "count": 2
+          },
+          {
+            "color": "#30a14e",
+            "count": 8
+          },
+          {
+            "color": "#40c463",
+            "count": 6
+          },
+          {
+            "color": "#216e39",
+            "count": 13
+          },
+          {
+            "color": "#30a14e",
+            "count": 9
+          },
+          {
+            "color": "#40c463",
+            "count": 5
+          }
+        ]
+      },
+      {
+        "week": "2024-07-28",
+        "contributions": [
+          {
+            "color": "#40c463",
+            "count": 5
+          },
+          {
+            "color": "#40c463",
+            "count": 6
+          },
+          {
+            "color": "#216e39",
+            "count": 11
+          },
+          {
+            "color": "#9be9a8",
+            "count": 3
+          },
+          {
+            "color": "#9be9a8",
+            "count": 2
+          },
+          {
+            "color": "#9be9a8",
+            "count": 2
+          },
+          {
+            "color": "#40c463",
+            "count": 4
+          }
+        ]
+      },
+      {
+        "week": "2024-08-04",
+        "contributions": [
+          {
+            "color": "#9be9a8",
+            "count": 1
+          },
+          {
+            "color": "#40c463",
+            "count": 6
+          },
+          {
+            "color": "#216e39",
+            "count": 13
+          },
+          {
+            "color": "#40c463",
+            "count": 5
+          },
+          {
+            "color": "#9be9a8",
+            "count": 2
+          },
+          {
+            "color": "#40c463",
+            "count": 4
+          },
+          {
+            "color": "#40c463",
+            "count": 4
+          }
+        ]
+      },
+      {
+        "week": "2024-08-11",
+        "contributions": [
+          {
+            "color": "#9be9a8",
+            "count": 3
+          },
+          {
+            "color": "#40c463",
+            "count": 4
+          },
+          {
+            "color": "#9be9a8",
+            "count": 2
+          },
+          {
+            "color": "#40c463",
+            "count": 5
+          },
+          {
+            "color": "#216e39",
+            "count": 14
+          },
+          {
+            "color": "#9be9a8",
+            "count": 3
+          },
+          {
+            "color": "#9be9a8",
+            "count": 2
+          }
+        ]
+      }
+    ],
+    "totalContributions": 474
+  },
+  "status": "COMPLETED",
+  "createdAt": "2024-06-16T11:31:51.641Z",
+  "updatedAt": "2024-08-17T06:24:03.328Z"
+}

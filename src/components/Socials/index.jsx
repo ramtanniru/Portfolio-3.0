@@ -61,7 +61,6 @@ const Socials = () => {
             >
                 <div className='flex flex-col gap-5 justify-center items-start'>
                     <h1 className='text_gradient text-[40px]'>Socials</h1>
-                    {/* <p className='text-black text-[40px] font-bold dark:text-white leading-tight'>UI/UX Designer,Full Stack Product Developer.</p> */}
                 </div>
             </motion.div>
               
@@ -72,10 +71,12 @@ const Socials = () => {
                 <div className="row-span-1 col-span-1">
                     <CodingCard link={"https://www.geeksforgeeks.org/user/ramtanniru2/"} src={"/images/social/gfg.jpeg"} key={2}/>
                 </div>
-                <div className="row-span-1 col-span-2 bg-gray-300">
-                    {/* <GithubProfile userData={props.userData} activityData={props.activityData} key={1}/> */}
+                <div className="row-span-1 col-span-2">
+                    <GithubProfile/>
                 </div>
-                <div className="row-span-2 col-span-2 bg-gray-400"></div>
+                <div className="row-span-2 col-span-2">
+                    <CodingCard link={""} src={"/images/social/blogs.png"}/>
+                </div>
                 <div className="row-span-1 col-span-1">
                     <Card app={"Figma"} username={"ram_tanniru_"} link={"https://www.instagram.com/ram_tanniru_"} src={"images/social/figma_light.svg"} srcDark={"images/social/figma_light.svg"} key={0}/>
                 </div>
@@ -86,7 +87,7 @@ const Socials = () => {
                     <Card app={"LinkedIn"} username={"ram_tanniru_"} link={"https://www.linkedin.com/in/ram-tanniru-12b35b222/"} src={"images/social/linkedin.svg"} srcDark={"images/social/linkedin.svg"}  key={0}/>
                 </div>
                 <div className="row-span-1 col-span-1">
-                    <Card app={"Twitter"} username={"ram_tanniru_"} link={"https://x.com/ramtanniru2"} src={"images/social/twitter_light.svg"} srcDark={"images/social/twitter_dark.svg"}  key={0}/>
+                    <Card app={"Twitter"} username={"ram_tanniru_"} link={"https://x.com/ramtanniru2"} src={"images/social/twitter_light.svg"} srcDark={"images/social/twitter_light.svg"}  key={0}/>
                 </div>
             </div>
         </main>
