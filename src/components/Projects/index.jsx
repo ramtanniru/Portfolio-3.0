@@ -5,7 +5,7 @@ import Image from 'next/image';
 // import {jobify} from "images/projects/jobify.png";
 const Projects = () => {
   return (
-    <div className="min-h-screen flex flex-col gap-20 items-start justify-start mt-30 md:mb-30">
+    <div className="md:min-h-screen flex flex-col gap-20 items-start justify-start mt-30 md:mb-30">
       <main className="flex flex-col gap-15 justify-start items-start mt-20 mb-0 mx-7 md:mt-30 md:mb-0 md:mx-30">
             <motion.div
               variants={{

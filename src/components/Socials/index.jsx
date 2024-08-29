@@ -7,7 +7,7 @@ import GithubProfile from './GithubProfile'
 
 const Socials = () => {
   return (
-    <div className="flex flex-col gap-20 items-center justify-center  md:mt-0 md:mb-0">
+    <div className="hidden md:flex flex-col gap-20 items-center justify-center md:mt-0 md:mb-0">
       <div className='w-full'>
         <main className="flex flex-col gap-10 justify-center items-center mt-20 mb-0 mx-7 md:mt-30 md:mb-0 md:mx-30">
             <motion.div
@@ -31,7 +31,6 @@ const Socials = () => {
                     <h1 className='text_gradient text-[40px]'>Socials</h1>
                 </div>
             </motion.div>
-              
             <div className="w-full grid grid-rows-3 grid-cols-4 gap-5 min-h-screen">
                 <div className="row-span-1 col-span-1">
                     <CodingCard link={"https://leetcode.com/u/ram_tanniru/"} src={"/images/social/leetcode.jpeg"} key={1}/>
